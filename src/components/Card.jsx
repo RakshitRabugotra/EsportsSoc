@@ -1,4 +1,3 @@
-import "./Card.css";
 import "./Cards.scss";
 import placeholder from "../assets/placeholder.png";
 import csgoImage from "../assets/csgo.png";
