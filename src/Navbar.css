@@ -1,6 +1,6 @@
 /*CSS page*/
 /*New Css Project*/
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,7 +21,6 @@ body {
   overflow: hidden;
   background: #fff;
   transition: 3s;
-
 }
 
 ul {
@@ -29,7 +28,14 @@ ul {
   display: flex;
   padding: 18px 0;
   background-size: 400% 400%;
-  background-image: linear-gradient(-45deg, #ff5959, #ff4040, #ff0d6e, #ff8033,#d74177);
+  background-image: linear-gradient(
+    -45deg,
+    #ff5959,
+    #ff4040,
+    #ff0d6e,
+    #ff8033,
+    #d74177
+  );
   animation: 12s myGradient infinite;
   border-radius: 40px;
   box-shadow: 3px 3px 20px #ff3352;
@@ -41,17 +47,17 @@ ul {
   0% {
     background-position: 0% 50%;
   }
-  
-  50%{
+
+  50% {
     background-position: 100% 50%;
   }
-  
+
   100% {
     background-position: 0% 50%;
   }
 }
 
-.fa-search{
+.fa-search {
   transition: 1s;
   cursor: pointer;
   margin-left: 30px;
@@ -86,28 +92,6 @@ li a {
   transition: 2s;
 }
 
-.active3:hover {
-  color: #fff;
-  animation: 1.5s myFlash linear infinite;
-  text-shadow: 2px 2px 30px #fff;
-  transition: 2s;
-  margin-top: -100px;
-}
-
-.active2:hover {
-  color: #fff;
-  animation: 1.5s myFlash linear infinite;
-  text-shadow: 2px 2px 30px #fff;
-  transition: 2s;
-}
-
-.active1:hover {
-  color: #fff;
-  animation: 1.5s myFlash linear infinite;
-  text-shadow: 2px 2px 30px #fff;
-  transition: 2s;
-}
-
 .active:hover {
   color: #fff;
   animation: 1.5s myFlash linear infinite;
@@ -120,11 +104,11 @@ li a {
     opacity: 1;
     text-shadow: transparent;
   }
-  
+
   50% {
-    opacity: .1;
+    opacity: 0.1;
   }
-  
+
   100% {
     opacity: 1;
     text-shadow: 2px 2px 20px #fff;
@@ -152,23 +136,22 @@ li a {
     background-position: 0% 50%;
     opacity: 0%;
   }
-  
+
   50% {
     background-position: 100% 50%;
   }
-  
+
   100% {
     background-position: 0% 50%;
     opacity: 1;
   }
 }
 
-
 @keyframes myLinear {
-  0%{
+  0% {
     width: 50px;
   }
-  
+
   100% {
     width: 250px;
   }
@@ -187,15 +170,15 @@ li a {
   animation: 1.6s myFlash linear infinite;
 }
 
-@keyframes myFlash{
+@keyframes myFlash {
   0% {
     opacity: 1;
   }
-  
-  50%{
-    opacity: .1;
+
+  50% {
+    opacity: 0.1;
   }
-  
+
   100% {
     opacity: 1;
   }
@@ -210,7 +193,7 @@ nav {
   0% {
     opacity: 0;
   }
-  
+
   100% {
     opacity: 1;
   }
@@ -224,46 +207,45 @@ nav {
   0% {
     opacity: 0;
   }
-  
+
   100% {
     opacity: 1;
   }
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .flash-GIF {
     display: none;
   }
-  
+
   .line-w5 {
     display: none;
   }
-  
+
   .navigation {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
   }
-  
+
   .text-content-fluid {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 65%;
     left: 50%;
   }
-  
+
   ul {
     padding: 15px 0;
   }
-  
-  
+
   li a {
     padding: 34px 34px;
     font-size: 23px;
     font-weight: lighter;
   }
-  
+
   .radial-cyrcle {
     width: 60px;
     height: 60px;
@@ -278,7 +260,7 @@ nav {
   }
 }
 
-.dropdown  a{
+.dropdown a {
   display: block;
   color: #fff;
   text-decoration: none;
@@ -288,9 +270,7 @@ nav {
   font-family: verdana;
   line-height: 30px;
   display: none;
-
 }
-
 
 .text-content-fluid {
   display: flex;
@@ -303,7 +283,7 @@ nav {
   font-family: verdana;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .text-content-fluid {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -353,15 +333,15 @@ nav {
     background-position: 0% 50%;
     box-shadow: 2px 3px 20px #ff1700;
   }
-  
+
   50% {
     background-position: 100% 50%;
-     box-shadow: none;
+    box-shadow: none;
   }
-  
+
   100% {
     background-position: 0% 50%;
-     box-shadow: 2px 3px 20px #ff1700;
+    box-shadow: 2px 3px 20px #ff1700;
   }
 }
 
