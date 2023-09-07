@@ -379,3 +379,18 @@ nav {
   transition: 2s;
   margin-top: 1px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+div{
+  /* font-family: Arial; */
+  /* color: red; */
+  text-align: center;
+}

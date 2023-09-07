@@ -1,26 +1,24 @@
 $itemGrow: 1.2;
 $duration: 250ms;
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 body {
   margin: 0;
-//   background-color: #000;
+  background-color: #000;
   font-family: Arial;
 }
 
 h1 {
   color: red;
-  text-align: center;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3,100%);
-  overflow:visible;
+  overflow:hidden;
   scroll-behavior: smooth;
+  padding: 35px;
 
   section {
     width: 100%;
@@ -57,19 +55,15 @@ h1 {
     }
 
     .arrow__btn {
-        
       position: absolute;
-      color: #ffffff;
+      color: #fff;
       text-decoration: none;
       font-size: 6em;
       background:rgb(0,0,0);
-      opacity: 60%;
       width: 80px;
-      padding:  140px 20px;
+      padding: 110px 20px;
       text-align: center;
       z-index: 1;
-      height: 430px;
-      justify-content: center;
     }
 
     .left-arrow {
