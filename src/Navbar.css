@@ -7,7 +7,7 @@
 }
 
 /*
-  Css code writen here...
+  Css code written here...
 */
 /*Body section...@*/
 body {
@@ -75,33 +75,11 @@ li a {
 .navigation {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 5%;
+  top: 7%;
   left: 50%;
 }
 
 .fa-search:hover {
-  color: #fff;
-  animation: 1.5s myFlash linear infinite;
-  text-shadow: 2px 2px 30px #fff;
-  transition: 2s;
-}
-
-.active3:hover {
-  color: #fff;
-  animation: 1.5s myFlash linear infinite;
-  text-shadow: 2px 2px 30px #fff;
-  transition: 2s;
-  margin-top: -100px;
-}
-
-.active2:hover {
-  color: #fff;
-  animation: 1.5s myFlash linear infinite;
-  text-shadow: 2px 2px 30px #fff;
-  transition: 2s;
-}
-
-.active1:hover {
   color: #fff;
   animation: 1.5s myFlash linear infinite;
   text-shadow: 2px 2px 30px #fff;
@@ -264,7 +242,7 @@ nav {
     font-weight: lighter;
   }
   
-  .radial-cyrcle {
+  .radial-cycle {
     width: 60px;
     height: 60px;
     border-radius: 50%;
