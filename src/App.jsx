@@ -11,6 +11,8 @@ function App() {
       <div className='content'>
       <Card/>
       </div>
+
+      <h2>Feature</h2>
     </>
   )
 }
