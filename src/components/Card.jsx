@@ -1,5 +1,4 @@
-
-import "./Cards.scss";
+import "./Card.scss";
 import placeholder from "../assets/placeholder.png";
 import csgoImage from "../assets/csgo.png";
 import valorantImage from "../assets/valorant.png"
