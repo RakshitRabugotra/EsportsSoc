@@ -1,22 +1,60 @@
-import PhotoAlbum from "react-photo-album";
+import Img1 from "../assets/img/1.jpg";
+import Img2 from "../assets/img/2.jpg";
+import Img3 from "../assets/img/3.jpg";
+import Img4 from "../assets/img/4.jpg";
+import Img5 from "../assets/img/5.jpg";
+import Img6 from "../assets/img/6.jpg";
+import Img7 from "../assets/img/7.jpg";
+import Img8 from "../assets/img/8.jpg";
+import Img9 from "../assets/img/9.jpg";
+import Img10 from "../assets/img/10.jpg";
+import "./Gallery.css";
+import CloseIcon from '@mui/icons-material/Close';
+import { useState } from "react";
 
-const photos = [
-    {
-        src: "/images/image1.jpg",
-        width: 800,
-        height: 600
-    },
-    {
-        src: "/images/image2.jpg",
-        width: 1600,
-        height: 900
-    }
-];
+let images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10];
+images = images.map((item, index) => {
+  return {
+    id: index+1,
+    imgSrc: item
+  }
+});
 
-function Gallery() {
-    return (
-        <PhotoAlbum layout="rows" photos={photos} />
-    )
+
+function Gallery(props) {
+
+  const [model, setModel] = useState(false);
+  const [tempImgSrc, setTempImgSrc] = useState('');
+
+  const getImg = (imgSrc) => {
+    setTempImgSrc(imgSrc);
+    setModel(true);
+  }
+
+  return (
+    <>
+      <div className={model ? "model open": "model"}>
+        <h2 className="caption">Caption</h2>
+        <img src={tempImgSrc}/>
+        <CloseIcon onClick={() => setModel(false)}/>
+      </div>
+
+      {props.title && <h1>{props.title}</h1>}
+
+      <div className="gallery">
+        {
+          images.map((item, index) => {
+            return (
+              <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
+                <img src={item.imgSrc} style={{width: '100%'}}/>
+              </div>
+            )
+          })
+        }
+      </div>
+    </>
+  );
 }
+
 
 export default Gallery;

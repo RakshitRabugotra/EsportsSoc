@@ -1,5 +1,4 @@
-
-import "./Cards.scss";
+import "./Card.scss";
 import placeholder from "../assets/placeholder.png";
 import csgoImage from "../assets/csgo.png";
 import valorantImage from "../assets/valorant.png"
@@ -9,10 +8,9 @@ import forzaImage from "../assets/forza.png";
 
 function Card() {
   return (
-    <div class="wrapper container">
+    <div class="wrapper">
 
   <section id="section1">
-    <a href="#section3" class="arrow__btn left-arrow">‹</a>
     <div class="item">
       <a href="#">
         <img
@@ -55,11 +53,9 @@ function Card() {
         <p class="duration">Duration: 10 min</p>
       </a>
     </div>
-    <a href="#section2" class="arrow__btn right-arrow">›</a>
   </section>
 
   <section id="section2">
-    <a href="#section1" class="arrow__btn left-arrow">‹</a>
     <div class="item">
       <a href="#">
       <img
@@ -89,10 +85,6 @@ function Card() {
         src={fallguysImage}
         alt="Describe Image"></img>
     </div>
-    
-
-
-    <a href="#section1" class="arrow__btn right-arrow">›</a>
   </section>
 </div>
   );

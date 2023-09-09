@@ -6,7 +6,9 @@ html { overflow-y: scroll; overflow-x:hidden; }
 body { position: absolute; }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    display: none;
+    width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -18,6 +20,6 @@ body { position: absolute; }
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 8px;
+    border-radius: 16px;
     background-color: #ff0d6ea2;
 }
