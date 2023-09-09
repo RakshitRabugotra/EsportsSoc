@@ -14,6 +14,8 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3,100%);
   overflow:hidden;
+  overflow-x: scroll;
+
   scroll-behavior: smooth;
   padding: 35px;
 
@@ -48,30 +50,6 @@ h1 {
         left: 20px;
         color: #fff;
       }
-      
     }
-
-    .arrow__btn {
-      position: absolute;
-      color: #fff;
-      text-decoration: none;
-      font-size: 6em;
-      background:rgb(0,0,0);
-      width: 80px;
-      padding: 110px 20px;
-      text-align: center;
-      z-index: 1;
-    }
-
-    .left-arrow {
-      top:0; bottom:0; left:0;
-      background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-    }
-    
-    .right-arrow {
-      top:0; bottom:0; right: 0;
-      background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-    }
-
   }
 }
