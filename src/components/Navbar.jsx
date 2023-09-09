@@ -1,4 +1,7 @@
 import './Navbar.css';
+import "@fontsource/oxanium"; // Defaults to weight 400
+import "@fontsource/oxanium/400.css"; // Specify weight
+// import "@fontsource/oxanium/400-italic.css"; // Specify weight and style
 
 function Navbar() {
 
