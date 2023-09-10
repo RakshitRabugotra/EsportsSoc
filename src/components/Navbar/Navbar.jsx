@@ -63,11 +63,11 @@ function Navbar() {
               </li>
   
               <li className="navbar-item">
-                <a href="#live" className="navbar-link skewBg" data-nav-link>Live</a>
+                <a href="#gallery-container" className="navbar-link skewBg" data-nav-link>Gallery</a>
               </li>
   
               <li className="navbar-item">
-                <a href="#features" className="navbar-link skewBg" data-nav-link>Features</a>
+                <a href="#features" className="navbar-link skewBg" data-nav-link>Events</a>
               </li>
   
               <li className="navbar-item">
@@ -79,7 +79,7 @@ function Navbar() {
               </li>
   
               <li className="navbar-item">
-                <a href="#" className="navbar-link skewBg" data-nav-link>Contact</a>
+                <a href="#contact" className="navbar-link skewBg" data-nav-link>Contact</a>
               </li>
   
             </ul>

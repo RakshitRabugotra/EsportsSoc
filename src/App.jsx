@@ -28,7 +28,7 @@ function App() {
 
       <ImageSlider slides={slides}/>
         
-      <div className="content">
+      <div className="content" id="gallery-container">
         <Gallery title="Gallery" />
       </div>
     </div>
