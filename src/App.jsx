@@ -2,23 +2,22 @@ import "./App.css";
 import Form from "./components/Form";
 import Navbar from "./components/Navbar";
 import Gallery from "./components/Gallery";
-import CardCarousel from "./components/CardCarousel";
-import Card from "./components/Card";
+import ImageSlider from "./components/ImageSlider";
 
-import csgoImage from "./assets/csgo.png";
-import fallguysImage from "./assets/fallguys.png";
-import fifa22Image from "./assets/fifa22.png";
-import forzaImage from "./assets/forza.png";
-import valorantImage from "./assets/valorant.png";
-import tekkenImage from "./assets/tekken.png";
+import csgoImage from "./assets/games/csgo.jpg";
+import fallguysImage from "./assets/games/fallguys.jpg";
+import fifa22Image from "./assets/games/fifa22.jpg";
+import forzaImage from "./assets/games/forza.jpg";
+import valorantImage from "./assets/games/valorant.jpg";
+import tekkenImage from "./assets/games/tekken7.jpg";
 
-const imgs = [
-  csgoImage,
-  fallguysImage,
-  fifa22Image,
-  forzaImage,
-  valorantImage,
-  tekkenImage,
+const slides = [
+  {url: csgoImage, title: 'csgo'},
+  {url: fallguysImage, title: 'fallguys'},
+  {url: fifa22Image, title: 'fifa22'},
+  {url: forzaImage, title: 'forza'},
+  {url: valorantImage, title: 'valorant'},
+  {url: tekkenImage, title: 'tekken'}
 ];
 
 function App() {
@@ -26,13 +25,10 @@ function App() {
     <div className="wrapper">
 
       <Navbar/>
-      {/* <CardCarousel>
-        {
-          imgs.map((item, index) => {
-            return <Card img={item} key={index}/>
-          })
-        }
-      </CardCarousel> */}
+
+      <div className="image-slider-container">
+        <ImageSlider slides={slides}/>
+      </div>
 
       <div className="content">
         <Gallery title="Gallery" />
