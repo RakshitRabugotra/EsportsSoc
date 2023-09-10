@@ -24,15 +24,15 @@ const imgs = [
 function App() {
   return (
     <div className="wrapper">
-      {/* <Navbar/> */}
 
-      <CardCarousel>
+      <Navbar/>
+      {/* <CardCarousel>
         {
           imgs.map((item, index) => {
             return <Card img={item} key={index}/>
           })
         }
-      </CardCarousel>
+      </CardCarousel> */}
 
       <div className="content">
         <Gallery title="Gallery" />
