@@ -21,12 +21,15 @@ const slides = [
 ];
 
 function App() {
+
+  const imageScrollIntervalMilliseconds = 5000;
+
   return (
     <div className="wrapper">
 
       <Navbar/>
 
-      <ImageSlider slides={slides}/>
+      <ImageSlider slides={slides} scrollInterval={imageScrollIntervalMilliseconds}/>
         
       <div className="content" id="gallery-container">
         <Gallery title="Gallery" />

@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import Button from "../Button/Button";
 import "./ImageSlider.css";
 
-const ImageSlider = ({ slides }) => {
+const ImageSlider = ({slides, scrollInterval }) => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -22,8 +22,15 @@ const ImageSlider = ({ slides }) => {
         setCurrentIndex(newIndex);
     }
 
-    // CSS variable
-    const primary = "#e9a401";
+    // TODO: Make a auto-scrolling image-slider
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         // goToNext();
+    //         console.log("Change to next");
+    //     }, scrollInterval);
+
+    //     return () => clearInterval(interval);
+    // }, []);
 
     const slideStyles = {
         backgroundPosition: "center",
@@ -49,7 +56,6 @@ const ImageSlider = ({ slides }) => {
             <Button/>
             <div className="slider-dots">
                 {slides.map((slide, slideIndex) => {
-                    console.log(slide);
                     return (
                         <div key={slideIndex} style={dotStyles}>
                             <HorizontalRuleIcon className={slideIndex === currentIndex ? "indicator active" : "indicator"} onClick={() => setCurrentIndex(slideIndex)}/> 
