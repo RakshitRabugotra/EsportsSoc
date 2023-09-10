@@ -2,6 +2,7 @@ import { useState } from "react";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import "./ImageSlider.css";
 
 const ImageSlider = ({ slides }) => {
 
@@ -20,40 +21,14 @@ const ImageSlider = ({ slides }) => {
         setCurrentIndex(newIndex);
     }
 
-    const sliderStyles = {
-        height: "100%",
-        position: "relative",
-        marginTop: "12vh",
-        padding: "10px 0px",
-    }
+    // CSS variable
+    const primary = "#e9a401";
 
     const slideStyles = {
-        width: "100%",
-        height: "100%",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundImage: `url(${slides[currentIndex].url})`,
         transition: "all 100ms ease"
-    }
-
-    const leftArrowStyles = {
-        position: 'absolute',
-        top: '50%',
-        transform: 'translate(0, -50%)',
-        left: '12px',
-        color: '#fff',
-        zIndex: 3,
-        cursor: "pointer"
-    }
-    
-    const rightArrowStyles = {
-        position: 'absolute',
-        top: '50%',
-        transform: 'translate(0, -50%)',
-        right: '12px',
-        color: '#fff',
-        zIndex: 3,
-        cursor: "pointer"
     }
 
     const dotContainerStyles = {
@@ -66,14 +41,14 @@ const ImageSlider = ({ slides }) => {
     }
 
     return (    
-        <div style={sliderStyles}>
-            <div style={leftArrowStyles}>
-                <ChevronLeftIcon style={{width: "100px", height: "100px"}} onClick={goToPrevious}/>
+        <div className="slider">
+            <div className="nav-arrow left">
+                <ChevronLeftIcon className="arrow" onClick={goToPrevious}/>
             </div>
-            <div style={rightArrowStyles}>
-                <ChevronRightIcon style={{width: "100px", height: "100px"}} onClick={goToNext}/>
+            <div className="nav-arrow right">
+                <ChevronRightIcon className="arrow" onClick={goToNext}/>
             </div>
-            <div style={slideStyles}></div>
+            <div style={slideStyles} className="slide"></div>
             <div style={dotContainerStyles}>
                 {slides.map((slide, slideIndex) => {
                     return (

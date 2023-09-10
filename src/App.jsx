@@ -26,9 +26,9 @@ function App() {
 
       <Navbar/>
 
-      <div className="image-slider-container">
-        <ImageSlider slides={slides}/>
-      </div>
+    
+      <ImageSlider slides={slides}/>
+
 
       <div className="content">
         <Gallery title="Gallery" />
