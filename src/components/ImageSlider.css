@@ -1,5 +1,7 @@
 :root {
-    --primary: #e9a401;
+    --indicator: #c50909;
+    --primary: #ddd;
+    --bgColor: #12151cad;
 }
 
 .slider {
@@ -29,10 +31,40 @@
     cursor: pointer;
 }
 
+.nav-arrow.left > *,
+.nav-arrow.right > * {
+    border-radius: 1px 1px;
+    background-color: var(--bgColor);
+}
+
 .slide {
     width: 100vw;
     height: 100vh;
 }
+
+.slider-dots {
+    position: absolute;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -1%);
+    z-index: 5;
+} 
+
+.indicator {
+    width: 100%;
+    font-size: large;
+    color: #fff;
+    margin: 1.2vw;
+    transform: scale(4);
+}
+
+.indicator.active {
+    color: var(--indicator);
+}
+
 
 .arrow {
     transform: scale(8);
@@ -89,5 +121,14 @@
     }
     .slide {
         height: 35vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .slider {
+        margin-top: 20%;
+    }
+    .slide {
+        height: 25vh;
     }
 }

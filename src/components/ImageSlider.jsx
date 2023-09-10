@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import "./ImageSlider.css";
 
 const ImageSlider = ({ slides }) => {
@@ -31,10 +31,6 @@ const ImageSlider = ({ slides }) => {
         transition: "all 100ms ease"
     }
 
-    const dotContainerStyles = {
-        display: 'flex',
-        justifyContent: 'center'
-    }
     const dotStyles = {
         margin: '0 3px',
         cursor: 'pointer'
@@ -49,11 +45,11 @@ const ImageSlider = ({ slides }) => {
                 <ChevronRightIcon className="arrow" onClick={goToNext}/>
             </div>
             <div style={slideStyles} className="slide"></div>
-            <div style={dotContainerStyles}>
+            <div className="slider-dots">
                 {slides.map((slide, slideIndex) => {
                     return (
                         <div key={slideIndex} style={dotStyles}>
-                            <FiberManualRecordIcon style={{width: "20px", color: (slideIndex === currentIndex) ? "#e9a401" : "#fff"}} onClick={() => setCurrentIndex(slideIndex)}/> 
+                            <HorizontalRuleIcon className={slideIndex === currentIndex ? "indicator active" : "indicator"} onClick={() => setCurrentIndex(slideIndex)}/> 
                         </div>
                     );
                 })}
