@@ -1,24 +1,139 @@
 import './Navbar.css';
+import "@fontsource/oxanium"; // Defaults to weight 400
+import "@fontsource/oxanium/400.css"; // Specify weight
+// import "@fontsource/oxanium/400-italic.css"; // Specify weight and style
 
 function Navbar() {
 
     return (
-        <div className="navigation">
-            <nav>
-                <ul className="nav-type">
+      <div>
+      <header class="header">
 
-                <li><a href="https://codepen.io/EneergeticTomy/" target="_blank" className="active">Home</a></li>
-                <li><a href="https://codepen.io/TomikaBoy/full/LqMpaE" target="_blank" className="active">About</a></li>
-                <li><a href="https://codepen.io/" target="_blank" className="active">Gallery</a></li>
-                <li><a href="https://w3schools.com/" target="_blank" className="active">Events</a></li>
-                <li><a href="https://w3schools.com/" target="_blank" className="active">Blog</a></li>
-                <li><a href="https://w3schools.com/" target="_blank" className="active">Contact</a></li>
-                <div className="line"></div>
-                <li><a><i className="fa fa-search" onclick="show()">
-                    </i></a></li>
-                </ul>
-            </nav>
+      <div class="header-top">
+        <div class="container">
+  
+          <div class="countdown-text">
+            Exclusive Black Friday ! Offer <span class="span skewBg">10</span> Days
+          </div>
+  
+          <div class="social-wrapper">
+  
+            <p class="social-title">Follow us on :</p>
+  
+            <ul class="social-list">
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+  
+            </ul>
+  
+          </div>
+  
         </div>
+      </div>
+  
+      <div class="header-bottom skewBg" data-header>
+        <div class="container">
+  
+          <a href="#" class="logo">EsportsSoc</a>
+  
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+  
+              <li class="navbar-item">
+                <a href="#home" class="navbar-link skewBg" data-nav-link>Home</a>
+              </li>
+  
+              <li class="navbar-item">
+                <a href="#live" class="navbar-link skewBg" data-nav-link>Live</a>
+              </li>
+  
+              <li class="navbar-item">
+                <a href="#features" class="navbar-link skewBg" data-nav-link>Features</a>
+              </li>
+  
+              <li class="navbar-item">
+                <a href="#shop" class="navbar-link skewBg" data-nav-link>Shop</a>
+              </li>
+  
+              <li class="navbar-item">
+                <a href="#blog" class="navbar-link skewBg" data-nav-link>Blog</a>
+              </li>
+  
+              <li class="navbar-item">
+                <a href="#" class="navbar-link skewBg" data-nav-link>Contact</a>
+              </li>
+  
+            </ul>
+          </nav>
+  
+          <div class="header-actions">
+  
+            <button class="cart-btn" aria-label="cart">
+              <ion-icon name="cart"></ion-icon>
+  
+              <span class="cart-badge">0</span>
+            </button>
+  
+            <button class="search-btn" aria-label="open search" data-search-toggler>
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+  
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+              <ion-icon name="menu-outline" class="menu"></ion-icon>
+              <ion-icon name="close-outline" class="close"></ion-icon>
+            </button>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+    </header>
+  
+  
+  
+  
+  
+    <div class="search-container" data-search-box>
+  
+      <div class="input-wrapper">
+        <input type="search" name="search" aria-label="search" placeholder="Search here..." class="search-field"/>
+  
+        <button class="search-submit" aria-label="submit search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+  
+        <button class="search-close" aria-label="close search" data-search-toggler></button>
+      </div>
+  
+    </div>
+    </div>
+  
+  
+  
+  
     );
 
 }
