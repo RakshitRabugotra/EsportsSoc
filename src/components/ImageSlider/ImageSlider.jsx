@@ -2,7 +2,7 @@ import { useState } from "react";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
-import Button from "./Button.jsx"
+import Button from "../Button/Button";
 import "./ImageSlider.css";
 
 const ImageSlider = ({ slides }) => {
