@@ -2,6 +2,7 @@ import { useState } from "react";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
+import Button from "./Button.jsx"
 import "./ImageSlider.css";
 
 const ImageSlider = ({ slides }) => {
@@ -45,8 +46,10 @@ const ImageSlider = ({ slides }) => {
                 <ChevronRightIcon className="arrow" onClick={goToNext}/>
             </div>
             <div style={slideStyles} className="slide"></div>
+            <Button/>
             <div className="slider-dots">
                 {slides.map((slide, slideIndex) => {
+                    console.log(slide);
                     return (
                         <div key={slideIndex} style={dotStyles}>
                             <HorizontalRuleIcon className={slideIndex === currentIndex ? "indicator active" : "indicator"} onClick={() => setCurrentIndex(slideIndex)}/> 
