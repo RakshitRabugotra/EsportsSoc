@@ -25,8 +25,3 @@
     box-shadow: inset 200px 0 0 0 var(--red);
     cursor: pointer;
 }
-
-.button:focus{
-    background-color: blueviolet;
-}
-

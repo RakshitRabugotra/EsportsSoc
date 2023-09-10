@@ -1,8 +1,8 @@
 import "./App.css";
-import Form from "./components/Form";
-import Navbar from "./components/Navbar";
-import Gallery from "./components/Gallery";
-import ImageSlider from "./components/ImageSlider";
+import Form from "./components/Form/Form";
+import Navbar from "./components/Navbar/Navbar";
+import Gallery from "./components/Gallery/Gallery";
+import ImageSlider from "./components/ImageSlider/ImageSlider";
 import ContactUs from "./components/ContactUs/ContactUs"
 
 import csgoImage from "./assets/games/csgo.jpg";
@@ -22,15 +22,18 @@ const slides = [
 ];
 
 function App() {
+
+  const imageScrollIntervalMilliseconds = 5000;
+
   return (
     <div>
     <div className="wrapper">
 
       <Navbar/>
 
-      <ImageSlider slides={slides}/>
+      <ImageSlider slides={slides} scrollInterval={imageScrollIntervalMilliseconds}/>
         
-      <div className="content">
+      <div className="content" id="gallery-container">
         <Gallery title="Gallery" />
       </div>
     </div>
