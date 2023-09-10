@@ -3,6 +3,7 @@ import Form from "./components/Form";
 import Navbar from "./components/Navbar";
 import Gallery from "./components/Gallery";
 import ImageSlider from "./components/ImageSlider";
+import ContactUs from "./components/ContactUs/ContactUs"
 
 import csgoImage from "./assets/games/csgo.jpg";
 import fallguysImage from "./assets/games/fallguys.jpg";
@@ -22,6 +23,7 @@ const slides = [
 
 function App() {
   return (
+    <div>
     <div className="wrapper">
 
       <Navbar/>
@@ -31,6 +33,8 @@ function App() {
       <div className="content">
         <Gallery title="Gallery" />
       </div>
+    </div>
+      <ContactUs/>
     </div>
   );
 }
