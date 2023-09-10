@@ -26,10 +26,8 @@ function App() {
 
       <Navbar/>
 
-    
       <ImageSlider slides={slides}/>
-
-
+        
       <div className="content">
         <Gallery title="Gallery" />
       </div>
