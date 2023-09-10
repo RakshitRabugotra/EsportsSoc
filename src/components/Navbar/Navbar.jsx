@@ -5,6 +5,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PinterestIcon from '@mui/icons-material/Pinterest';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 function Navbar() {
 
@@ -84,20 +86,9 @@ function Navbar() {
           </nav>
   
           <div className="header-actions">
-  
-            <button className="cart-btn" aria-label="cart">
-              <ion-icon name="cart"></ion-icon>
-  
-              <span className="cart-badge">0</span>
-            </button>
-  
-            <button className="search-btn" aria-label="open search" data-search-toggler>
-              <ion-icon name="search-outline"></ion-icon>
-            </button>
-  
             <button className="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-              <ion-icon name="menu-outline" className="menu"></ion-icon>
-              <ion-icon name="close-outline" className="close"></ion-icon>
+              <MenuIcon name="menu-outline" className="menu"/>
+              <CloseIcon name="close-outline" className="close"/>
             </button>
   
           </div>
