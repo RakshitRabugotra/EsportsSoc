@@ -1,7 +1,10 @@
 import './Navbar.css';
 import "@fontsource/oxanium"; // Defaults to weight 400
 import "@fontsource/oxanium/400.css"; // Specify weight
-// import "@fontsource/oxanium/400-italic.css"; // Specify weight and style
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PinterestIcon from '@mui/icons-material/Pinterest';
 
 function Navbar() {
 
@@ -22,28 +25,20 @@ function Navbar() {
   
             <ul className="social-list">
   
-              <li>
-                <a href="#" className="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
+              <li className="social-link">
+                  <InstagramIcon/>
               </li>
   
-              <li>
-                <a href="#" className="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
+              <li className="social-link">
+                  <TwitterIcon/>
               </li>
   
-              <li>
-                <a href="#" className="social-link">
-                  <ion-icon name="logo-pinterest"></ion-icon>
-                </a>
+              <li className="social-link">
+                  <PinterestIcon/>
               </li>
   
-              <li>
-                <a href="#" className="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
+              <li className="social-link">
+                  <LinkedInIcon/>
               </li>
   
             </ul>

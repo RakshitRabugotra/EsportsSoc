@@ -1085,7 +1085,7 @@ body {
 
 .footer .social-link {
   color: var(--white);
-  padding: 10px;
+  padding: 10px; 
   border-radius: 2px;
 }
 
@@ -1446,6 +1446,14 @@ body {
     color: var(--red);
     font-size: var(--fs-9);
     padding: 8px 10px;
+  }
+
+  .social-link > * {
+    padding: 0;
+    top: 0;
+    left: 0;
+    transform: scale(2.2);
+    border-radius: 2px;
   }
 
   .header-bottom { outline: 1px solid hsla(0, 0%, 0%, 0.2); }

@@ -1,8 +1,8 @@
 import "./App.css";
-import Form from "./components/Form";
-import Navbar from "./components/Navbar";
-import Gallery from "./components/Gallery";
-import ImageSlider from "./components/ImageSlider";
+import Form from "./components/Form/Form";
+import Navbar from "./components/Navbar/Navbar";
+import Gallery from "./components/Gallery/Gallery";
+import ImageSlider from "./components/ImageSlider/ImageSlider";
 
 import csgoImage from "./assets/games/csgo.jpg";
 import fallguysImage from "./assets/games/fallguys.jpg";
