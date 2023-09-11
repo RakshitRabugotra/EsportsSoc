@@ -78,8 +78,9 @@
     .slide {
         height: 76vh;
     }
-    .arrow {
-        transform: scale(7);
+    .nav-arrow.left svg,
+    .nav-arrow.right svg  {
+        transform: scale(3);
     }
 }
 
@@ -89,9 +90,6 @@
     }
     .slide {
         height: 62vh;
-    }
-    .arrow {
-        transform: scale(5);
     }
     .slider-dots {
         width: 40%;
@@ -104,9 +102,6 @@
     }
     .slide {
         height: 45vh;
-    }
-    .arrow {
-        transform: scale(4);
     }
     .slider-dots {
         width: 50%;
@@ -131,6 +126,10 @@
     }
     .slide {
         height: 35vh;
+    }
+    .nav-arrow.left svg,
+    .nav-arrow.right svg {
+        transform: scale(2);
     }
     .slider-dots > * {
         transform: scale(0.6);
