@@ -389,7 +389,7 @@ body {
   color: var(--white);
   font-size: 30px;
   border: 1px solid var(--white);
-  padding: 4px;
+  padding: 14px;
 }
 
 .nav-toggle-btn.active .menu,
