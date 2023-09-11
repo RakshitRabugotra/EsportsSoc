@@ -92,6 +92,9 @@
     .arrow {
         transform: scale(5);
     }
+    .slider-dots {
+        width: 40%;
+    }
 }
 
 @media (max-width: 740px) {
@@ -104,6 +107,9 @@
     .arrow {
         transform: scale(4);
     }
+    .slider-dots {
+        width: 50%;
+    }
 }
 
 @media (max-width: 640px) {
@@ -112,6 +118,9 @@
     }
     .slide {
         height: 40vh;
+    }
+    .slider-dots > * {
+        transform: scale(0.8);
     }
 }
 
@@ -122,6 +131,9 @@
     .slide {
         height: 35vh;
     }
+    .slider-dots > * {
+        transform: scale(0.6);
+    }
 }
 
 @media (max-width: 450px) {
@@ -130,5 +142,9 @@
     }
     .slide {
         height: 25vh;
+    }
+    .slider-dots {
+        font-size: smaller;
+        
     }
 }
