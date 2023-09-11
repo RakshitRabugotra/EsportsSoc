@@ -2,7 +2,6 @@ h1 {
   position: relative;
   padding: 0;
   margin: 0;
-  /* font-family: "Raleway", sans-serif; */
   font-family: var(--ff-oxanium);
   font-weight: 300;
   font-size: 40px;
@@ -23,7 +22,7 @@ h1 em {
 }
 
 .styled-heading h1 {
-  font-size: 48px;
+  font-size: var(--fs-1);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -31,15 +30,15 @@ h1 em {
   text-align: center;
   margin: auto;
   white-space: nowrap;
-  padding-bottom: 13px;
+  padding-bottom: 0.8rem;
 }
 .styled-heading h1:before {
   background-color: var(--red);
   content: "";
   display: block;
   height: 3px;
-  width: 175px;
-  margin-bottom: 5px;
+  width: calc(2 * var(--fs-1));
+  margin-bottom: 0.25px;
 }
 .styled-heading h1:after {
   background-color: var(--red);
@@ -49,6 +48,58 @@ h1 em {
   right: 0;
   bottom: 0;
   height: 3px;
-  width: 175px;
+  width: calc(2 * var(--fs-1));
   margin-bottom: 0.25em;
 }
+
+@media (max-width: 1500px) {
+    .styled-heading h1 {
+        font-size: var(--fs-2);
+    }
+}
+
+@media (max-width: 1100px) {
+    .styled-heading h1:before,
+    .styled-heading h1:after {
+        width: 110px;   
+    }
+}
+
+@media (max-width: 992px) {
+    .styled-heading h1 {
+        font-size: var(--fs-3);
+    }
+}
+
+@media (max-width: 768px) {
+    .styled-heading h1:before,
+    .styled-heading h1:after {
+        width: 90px;
+        height: 0.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .styled-heading h1 {
+        font-size: var(--fs-4);
+    }
+
+    .styled-heading h1:before,
+    .styled-heading h1:after {
+        width: 55px;
+        height: 0.3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .styled-heading h1 {
+        font-size: var(--fs-5);
+    }
+
+    .styled-heading h1:before,
+    .styled-heading h1:after {
+        width: 45px;
+        height: 0.25rem;
+    }
+}
+
