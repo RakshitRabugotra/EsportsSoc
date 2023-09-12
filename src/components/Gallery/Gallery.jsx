@@ -8,12 +8,14 @@ import Img7 from "../../assets/img/7.jpg";
 import Img8 from "../../assets/img/8.jpg";
 import Img9 from "../../assets/img/9.jpg";
 import Img10 from "../../assets/img/10.jpg";
+import Img11 from "../../assets/img/11.jpg";
+import Img12 from "../../assets/img/12.jpg";
 import "./Gallery.css";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import Heading from "../Heading/Heading";
 
-let images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10];
+let images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10, Img11, Img12];
 images = images.map((item, index) => {
   return {
     id: index + 1,
