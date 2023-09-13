@@ -1,4 +1,8 @@
 import "./ContactUs.css";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import PinterestIcon from "@mui/icons-material/Pinterest";
 
 function ContactUs() {
   return (
@@ -42,9 +46,10 @@ function ContactUs() {
 
           <div className="footer-brand">
 
-            <a href="#" className="logo">Gamics</a>
+            <a href="#" className="logo">EsportsSoc | Hansraj College</a>
 
             <p className="footer-text">
+              {/* TODO: change the text in footer */}
               Gamics marketplace the relase etras thats sheets continig passag.
             </p>
 
@@ -56,7 +61,7 @@ function ContactUs() {
                 </div>
 
                 <address className="item-text">
-                  Address : PO Box W75 Street lan West new queens
+                  Address : Hansraj College, University of Delhi, Delhi.
                 </address>
               </li>
 
@@ -65,7 +70,7 @@ function ContactUs() {
                   <ion-icon name="headset"></ion-icon>
                 </div>
 
-                <a href="tel:+241245654235" className="item-text">Phone : +24 1245 654 235</a>
+                <a href="tel:+919569764949" className="item-text">Phone : +91 956-9764949</a>
               </li>
 
               <li className="contact-item">
@@ -73,7 +78,7 @@ function ContactUs() {
                   <ion-icon name="mail-open"></ion-icon>
                 </div>
 
-                <a href="mailto:info@exemple.com" className="item-text">Email : info@exemple.com</a>
+                <a href="mailto:esportssoc.hansraj@gmail.com" className="item-text">Email : esportssoc.hansraj@gmail.com</a>
               </li>
 
             </ul>
@@ -145,26 +150,26 @@ function ContactUs() {
               <ul className="social-list">
 
                 <li>
-                  <a href="#" className="social-link" style={{backgroundColor: "#3b5998"}}>
-                    <ion-icon name="logo-facebook"></ion-icon>
+                  <a href="#" className="social-link" style={{backgroundColor: "#C13584"}}>
+                    <InstagramIcon name="logo-instagram"/>
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="social-link" style={{backgroundColor: "#55acee"}}>
-                    <ion-icon name="logo-twitter"></ion-icon>
+                    <TwitterIcon name="logo-twitter"/>
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="social-link" style={{backgroundColor: "#d71e18"}}>
-                    <ion-icon name="logo-pinterest"></ion-icon>
+                    <PinterestIcon name="logo-pinterest"/>
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="social-link" style={{backgroundColor: "#1565c0"}}>
-                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <LinkedInIcon name="logo-linkedin"/>
                   </a>
                 </li>
 
@@ -196,12 +201,8 @@ function ContactUs() {
         <div className="container">
 
           <p className="copyright">
-            &copy; 2022 Gamics. All Right Reserved by <a href="#" className="copyright-link">codewithsadee</a>
+            &copy; 2023 EsportsSoc. All Right Reserved by <a href="#" className="copyright-link">EsportsSoc | Hansraj College</a>
           </p>
-
-          <img src="./assets/images/footer-bottom-img.png" width="340" height="21" loading="lazy" alt=""
-            className="footer-bottom-img"/>
-
         </div>
       </div>
 
