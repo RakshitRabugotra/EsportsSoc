@@ -3,6 +3,7 @@ import Form from "./components/Form/Form";
 import Navbar from "./components/Navbar/Navbar";
 import Gallery from "./components/Gallery/Gallery";
 import ImageSlider from "./components/ImageSlider/ImageSlider";
+import ContactUs from "./components/ContactUs/ContactUs"
 
 import codmImage from "./assets/games/codm.jpg";
 import csgoImage from "./assets/games/csgo.jpg";
@@ -29,8 +30,7 @@ function App() {
   const imageScrollIntervalMilliseconds = 5000;
 
   return (
-    <div className="wrapper">
-
+    <>
       <Navbar/>
 
       <ImageSlider slides={slides} scrollInterval={imageScrollIntervalMilliseconds}/>
@@ -38,7 +38,9 @@ function App() {
       <div className="content" id="gallery-container">
         <Gallery title="Gallery" />
       </div>
-    </div>
+    
+      <ContactUs/>
+    </>
   );
 }
 

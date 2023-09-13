@@ -90,3 +90,7 @@
     transform: scale(4);
     cursor: pointer;
 }
+
+.gallery-container{
+    margin-bottom: 100px;
+}
