@@ -3,7 +3,7 @@ import "./ContactUs.css";
 function ContactUs() {
   return (
     <>
-    <section class="newsletter" aria-label="newsletter">
+    <section class="newsletter" aria-label="newsletter" id="contact">
         <div class="container">
           
           <div class="newsletter-card">

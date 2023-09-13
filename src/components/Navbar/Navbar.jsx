@@ -54,14 +54,8 @@ function Navbar() {
           <nav className={`navbar ${isActive && "active"}`} data-navbar>
             <ul className="navbar-list">
               <li className="navbar-item">
-                <a href="#home" className="navbar-link skewBg" data-nav-link>
-                  Home
-                </a>
-              </li>
-
-              <li className="navbar-item">
                 <a
-                  href="#gallery-container"
+                  href="#gallery"
                   className="navbar-link skewBg"
                   data-nav-link
                 >
@@ -76,12 +70,6 @@ function Navbar() {
                   data-nav-link
                 >
                   Events
-                </a>
-              </li>
-
-              <li className="navbar-item">
-                <a href="#shop" className="navbar-link skewBg" data-nav-link>
-                  Shop
                 </a>
               </li>
 

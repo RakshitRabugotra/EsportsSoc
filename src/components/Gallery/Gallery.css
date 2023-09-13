@@ -1,3 +1,7 @@
+.gallery-container {
+    margin-block-start: 2rem;
+}
+
 .gallery {
     -webkit-column-count: 3;
     -moz-column-count: 3;
