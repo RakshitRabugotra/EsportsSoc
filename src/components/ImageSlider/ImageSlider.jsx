@@ -33,10 +33,12 @@ const ImageSlider = ({slides, scrollInterval }) => {
     // }, []);
 
     const slideStyles = {
-        backgroundPosition: "center",
-        backgroundSize: "cover",
         backgroundImage: `url(${slides[currentIndex].url})`,
         transition: "all 100ms ease"
+    }
+
+    const upfrontImage = {
+        backgroundImage: `url(${slides[currentIndex].url})`,
     }
 
     const dotStyles = {
@@ -53,6 +55,7 @@ const ImageSlider = ({slides, scrollInterval }) => {
                 <ChevronRightIcon className="arrow" onClick={goToNext}/>
             </div>
             <div style={slideStyles} className="slide"></div>
+            <div style={upfrontImage} className="upfrontImage"></div>
             <Button/>
             <div className="slider-dots">
                 {slides.map((slide, slideIndex) => {
