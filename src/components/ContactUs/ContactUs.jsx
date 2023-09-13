@@ -1,4 +1,4 @@
-import React from 'react'; // Import React
+import "./ContactUs.css";
 
 function ContactUs() {
   return (
