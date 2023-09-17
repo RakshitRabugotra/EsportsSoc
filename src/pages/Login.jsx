@@ -1,15 +1,25 @@
 import "./Login.css";
+import Heading from "../components/Heading/Heading";
 import EmailIcon from '@mui/icons-material/Email';
 import PersonIcon from '@mui/icons-material/Person';
 import KeyIcon from '@mui/icons-material/Key';
-import Heading from "../components/Heading/Heading";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 
+    const navigate = useNavigate();
+
     return (<>
+
+
     <div className="form-wrapper">
-        <Heading>Register</Heading>
+        <div className="back-btn">
+            <ArrowBackIcon onClick={() => {navigate("/")}}/>
+        </div>
         
+        <Heading>Register</Heading>
+
         <form className="form-wrapper__form" onSubmit={(e) => {e.preventDefault();}}>
 
             <label htmlFor="emailId"><EmailIcon/></label>
@@ -21,7 +31,8 @@ const Login = () => {
             <label htmlFor="passwd"><KeyIcon/></label>
             <input type="password" name="passwd" minlength="8" placeholder="Password" required aria-label="user-name"/>
 
-            {/* <input type="submit" className="submit"/> */}
+            <label></label>
+            <button type="submit" className="submit-btn"><span>Let's Go</span></button>
         </form>
     </div>
     </>);

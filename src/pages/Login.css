@@ -1,4 +1,3 @@
-
 .form-wrapper {
     display: flex;
     flex-direction: column;
@@ -7,28 +6,64 @@
     align-items: center;
     width: 100%;
     height: 100vh;
+    background: linear-gradient(15deg, var(--rich-black-fogra-29_95), var(--jet)), url("../assets/background/games.png");
+    background-size: cover;
+    gap: 40px;
+    transform: all 300ms ease;
+    animation: opacitySwitch 300ms ease-in;
+}
+
+@keyframes opacitySwitch {
+    from {opacity: 0;}
+    to {opacity: 100%;}
+}
+
+.back-btn {
+    color: #fff;
+    background-color: #0f0f0f;
     
+    display: block;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    padding: 0.5rem;
+
+    transform: skew(-21deg);
+    transition: all 300ms ease;
+
+    cursor: pointer;
+}
+
+.back-btn svg {
+    display: block;
+    margin: auto;
+    font-size: 3rem;
+    transform: skew(21deg);
+}
+
+.back-btn:hover {
+    color: var(--red);
+    background-color: #ddd;
 }
 
 .form-wrapper form {
     width: 40%;
     padding: 50px;
-    background: linear-gradient(0deg, var(--jet), var(--red_75)), url("../assets/background/games.png");
+    background: linear-gradient(0deg, var(--jet), rgba(88, 2, 2, 0.822)), url("../assets/background/games.png");
     background-size: cover;
+
+    /* Box shadow */
+    box-shadow: 0 .5em 15px 1em var(--jet);
+    /* box-shadow: 4px 4px 20px 10px rgba(171, 8, 8, 0.738), 5px 5px 10px 20px var(--jet); */
 }
 
 .form-wrapper__form {
     display: grid;
     grid-template-columns: 3rem 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+    gap: 30px;
     text-align: center;
 }
-
-/* .form-wrapper__form .submit {
-    grid-row: 3 / span 2;
-    grid-column: ;
-} */
 
 
 .form-wrapper__form label {
@@ -41,12 +76,39 @@
     height: 100%;
     font-size: 3.5rem;
     color: #ddd;
+    filter: drop-shadow(2px 2px 1rem var(--dim-gray));
 }
 
 .form-wrapper__form input {
     background-color: #ddd;
     border: solid var(--jet) 2px;
-    border-radius: 10px 0px;
     max-height: min-content;
     padding: 0px 15px;
+    border: none;
+    box-shadow: 0px 0px 20px var(--dim-gray), 5px 5px 10px var(--red_75);
+}
+
+
+.submit-btn {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: var(--red);
+    font-size: var(--fs-6);
+    font-family: var(--ff-oxanium);
+    font-weight: 600;
+    box-shadow: 0px 5px 10px var(--red_75);
+    transform: skew(-21deg);
+}
+
+.submit-btn span {
+    padding: 5px 0px;
+    transform: skew(21deg);
+}
+
+@media (max-width: 400px) {
+    .form-wrapper form {
+        width: 80%;
+    }
 }
