@@ -306,6 +306,16 @@ body {
   gap: 20px;
 }
 
+.register-btn {
+  color: var(--red);
+  border: none;
+}
+
+.register-btn svg {
+  font-size: 4rem;
+}
+
+
 .nav-toggle-btn {
   color: var(--white);
   border: 1px solid var(--white);

@@ -5,12 +5,15 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PinterestIcon from "@mui/icons-material/Pinterest";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
   const [isActive, setIsActive] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header className="header">
@@ -54,11 +57,7 @@ function Navbar() {
           <nav className={`navbar ${isActive && "active"}`} data-navbar>
             <ul className="navbar-list">
               <li className="navbar-item">
-                <a
-                  href="#gallery"
-                  className="navbar-link skewBg"
-                  data-nav-link
-                >
+                <a href="#gallery" className="navbar-link skewBg" data-nav-link>
                   Gallery
                 </a>
               </li>
@@ -88,6 +87,19 @@ function Navbar() {
           </nav>
 
           <div className="header-actions">
+            <button
+              className="register-btn"
+              aria-label="open search"
+              data-search-toggler
+            >
+              <AccountBoxIcon
+                onClick={() => {
+                  console.log("CLICKED!");
+                  props.registerURL && navigate(props.registerURL);
+                }}
+              />
+            </button>
+
             <button
               className={`nav-toggle-btn ${isActive && "active"}`}
               aria-label="toggle menu"

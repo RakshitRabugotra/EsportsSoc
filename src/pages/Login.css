@@ -1,0 +1,52 @@
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.form-wrapper form {
+    width: 40%;
+    padding: 50px;
+    background: linear-gradient(0deg, var(--jet), var(--red_75)), url("../assets/background/games.png");
+    background-size: cover;
+}
+
+.form-wrapper__form {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+/* .form-wrapper__form .submit {
+    grid-row: 3 / span 2;
+    grid-column: ;
+} */
+
+
+.form-wrapper__form label {
+    text-align: left;
+    width: 100%;
+}
+
+.form-wrapper__form label svg {
+    display: block;
+    height: 100%;
+    font-size: 3.5rem;
+    color: #ddd;
+}
+
+.form-wrapper__form input {
+    background-color: #ddd;
+    border: solid var(--jet) 2px;
+    border-radius: 10px 0px;
+    max-height: min-content;
+    padding: 0px 15px;
+}
