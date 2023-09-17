@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Gallery from "../components/Gallery/Gallery";
 import ImageSlider from "../components/ImageSlider/ImageSlider";
 import ContactUs from "../components/ContactUs/ContactUs"
+import Blog from "../components/Blog/BLog";
 
 import codmImage from "../assets/games/codm.jpg";
 import csgoImage from "../assets/games/csgo.jpg";
@@ -11,6 +12,7 @@ import forzaImage from "../assets/games/forza.jpg";
 import rocketLeagueImage from "../assets/games/rocket-league.jpg"
 import tekkenImage from "../assets/games/tekken7.jpg";
 import valorantImage from "../assets/games/valorant.jpg";
+
 
 const slides = [
   {url: codmImage, title: 'CODM'},
