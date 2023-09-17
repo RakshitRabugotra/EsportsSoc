@@ -307,13 +307,19 @@ body {
 }
 
 .register-btn {
-  color: var(--red);
+  transition: all 300ms ease;
+  color: #fff;
   border: none;
 }
 
 .register-btn svg {
   font-size: 4rem;
 }
+
+.register-btn:hover {
+  color: var(--red);
+}
+
 
 
 .nav-toggle-btn {
