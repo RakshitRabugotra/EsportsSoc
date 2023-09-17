@@ -33,7 +33,7 @@ function Gallery(props) {
   };
 
   return (
-    <div className="gallery-container" id="gallery">
+    <div className="gallery-container">
       <div className={model ? "model open" : "model"}>
         <h2 className="caption">Caption</h2>
         <img src={tempImgSrc} />
