@@ -29,14 +29,26 @@ const Home = () => {
 
     return (
         <>
+          {/* Header section */}
           <Navbar registerURL="login"/>
     
-          <ImageSlider slides={slides} scrollInterval={imageScrollIntervalMilliseconds}/>
+          {/* Main section */}
+          <main>
+            <section id="image-slider" className="image-slider-section">
+              <ImageSlider slides={slides} scrollInterval={imageScrollIntervalMilliseconds}/>
+            </section>
             
-          <div className="content" id="gallery-container">
-            <Gallery title="Gallery" />
-          </div>
+            <section id="blog" className="blog-section">
+              <Blog/>
+            </section>
+              
+            <section id="gallery" className="gallery-section">
+              <Gallery title="Gallery"/>
+            </section>
+
+          </main>
         
+          {/* Footer section */}
           <ContactUs/>
         </>
     );
