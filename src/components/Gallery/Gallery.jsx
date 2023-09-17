@@ -40,13 +40,16 @@ function Gallery(props) {
         <CloseIcon onClick={() => setModel(false)} />
       </div>
 
-      {props.title && (
-        <Heading
-          style={{ width: "100%", textAlign: "center", padding: "12px", fontSize: "78px" }}
-        >
-          {props.title}
-        </Heading>
-      )}
+      <div style={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+      }}>
+        {props.title && (
+          <Heading>{props.title}</Heading>
+        )}
+      </div>
 
       <div className="gallery">
         {images.map((item, index) => {
