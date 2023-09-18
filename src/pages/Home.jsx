@@ -8,6 +8,7 @@ import codmImage from "../assets/games/codm.jpg";
 import csgoImage from "../assets/games/csgo.jpg";
 import fallguysImage from "../assets/games/fallguys.jpg";
 import fifa22Image from "../assets/games/fifa22.jpg";
+import nbaImage from "../assets/games/nba2k.jpg";
 import forzaImage from "../assets/games/forza.jpg";
 import rocketLeagueImage from "../assets/games/rocket-league.jpg"
 import tekkenImage from "../assets/games/tekken7.jpg";
@@ -19,6 +20,7 @@ const slides = [
   {url: csgoImage, title: 'csgo'},
   {url: fallguysImage, title: 'fallguys'},
   {url: fifa22Image, title: 'fifa22'},
+  {url: nbaImage, title: 'NBA2K'},
   {url: forzaImage, title: 'forza'},
   {url: rocketLeagueImage, title: 'Rocket League'},
   {url: tekkenImage, title: 'tekken'},
