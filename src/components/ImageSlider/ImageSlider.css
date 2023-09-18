@@ -13,30 +13,31 @@
     margin-block-end: 20px;
 }
 
-.nav-arrow.left {
+.nav-arrow {
+    display: block;
     position: absolute;
-    top: 50%;
-    left: 1%;
-    transform: translate(0, -50%);
-    color: var(--primary);
-    z-index: 3;
     cursor: pointer;
+    z-index: 3;
+    color: var(--primary);
+}
+
+.nav-arrow.left {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
 }
 
 .nav-arrow.right {
-    position: absolute;
     top: 50%;
-    right: 1%;
+    right: 0%;
     transform: translate(0, -50%);
-    color: var(--primary);
-    z-index: 3;
-    cursor: pointer;
 }
 
 .nav-arrow.left svg,
 .nav-arrow.right svg {
-    border-radius: 1px 1px;
-    transform: scale(5);
+    display: block;
+    margin: auto;
+    font-size: 7rem;
     background-color: var(--bgColor);
 }
 
@@ -44,6 +45,7 @@
 .nav-arrow.right svg:active {
     background-color: var(--red_75);
 }
+
 
 .slide {
     /* Add the blur effect */
@@ -89,6 +91,10 @@
     z-index: 5;
 } 
 
+.slider-dots svg {
+    font-size: 1rem;
+}
+
 .indicator {
     width: 100%;
     font-size: large;
@@ -108,10 +114,6 @@
     .slide {
         height: 76vh;
     }
-    .nav-arrow.left svg,
-    .nav-arrow.right svg  {
-        transform: scale(3);
-    }
 }
 
 @media (max-width: 1100px) {
@@ -124,7 +126,12 @@
     .slider-dots {
         width: 40%;
     }
+    .nav-arrow.left svg,
+    .nav-arrow.right svg {
+        font-size: 6rem;
+    }
 }
+
 
 @media (max-width: 740px) {
     .slider {
@@ -136,6 +143,10 @@
     .slider-dots {
         width: 50%;
     }
+    .nav-arrow.left svg,
+    .nav-arrow.right svg {
+        font-size: 5rem;
+    }
 }
 
 @media (max-width: 640px) {
@@ -145,8 +156,8 @@
     .slide {
         height: 40vh;
     }
-    .slider-dots > * {
-        transform: scale(0.8);
+    .slider-dots svg {
+        font-size: 1rem;
     }
 }
 
@@ -157,12 +168,8 @@
     .slide {
         height: 35vh;
     }
-    .nav-arrow.left svg,
-    .nav-arrow.right svg {
-        transform: scale(2);
-    }
-    .slider-dots > * {
-        transform: scale(0.6);
+    .slider-dots svg {
+        font-size: 0.75rem;
     }
 }
 
@@ -173,8 +180,11 @@
     .slide {
         height: 25vh;
     }
-    .slider-dots {
-        font-size: smaller;
-        
+    .slider-dots svg {
+        font-size: 0.6rem;
+    }
+    .nav-arrow.left svg,
+    .nav-arrow.right svg {
+        font-size: 2.3em;
     }
 }
