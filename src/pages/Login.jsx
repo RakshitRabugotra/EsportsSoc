@@ -11,8 +11,6 @@ const Login = () => {
     const navigate = useNavigate();
 
     return (<>
-
-
     <div className="form-wrapper">
         <div className="back-btn">
             <ArrowBackIcon onClick={() => {navigate("/")}}/>
@@ -29,7 +27,7 @@ const Login = () => {
             <input type="text" name="username" placeholder="Your Name" required aria-label="user-name"/>
 
             <label htmlFor="passwd"><KeyIcon/></label>
-            <input type="password" name="passwd" minlength="8" placeholder="Password" required aria-label="user-name"/>
+            <input type="password" name="passwd" minLength={8} placeholder="Password" required aria-label="user-name"/>
 
             <label></label>
             <button type="submit" className="submit-btn"><span>Let's Go</span></button>
