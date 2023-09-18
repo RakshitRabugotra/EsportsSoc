@@ -92,12 +92,12 @@ h1 em {
 
 @media (max-width: 400px) {
     .styled-heading h1 {
-        font-size: var(--fs-5);
+        font-size: var(--fs-3);
     }
 
     .styled-heading h1:before,
     .styled-heading h1:after {
-        width: 45px;
+        width: calc(2 * var(--fs-3));
         height: 0.25rem;
     }
 }
