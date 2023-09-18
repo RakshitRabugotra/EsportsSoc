@@ -6,7 +6,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import MenuIcon from "@mui/icons-material/Menu";
+import ListIcon from '@mui/icons-material/List';
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -28,19 +28,19 @@ function Navbar(props) {
             <p className="social-title">Follow us on :</p>
 
             <ul className="social-list">
-              <li className="social-link">
+              <li className="social-link instagram-btn">
                 <InstagramIcon />
               </li>
 
-              <li className="social-link">
+              <li className="social-link twitter-btn">
                 <TwitterIcon />
               </li>
 
-              <li className="social-link">
+              <li className="social-link pinterest-btn">
                 <PinterestIcon />
               </li>
 
-              <li className="social-link">
+              <li className="social-link linkedin-btn">
                 <LinkedInIcon />
               </li>
             </ul>
@@ -51,7 +51,7 @@ function Navbar(props) {
       <div className="header-bottom skewBg" data-header>
         <div className="container">
           <a href="#" className="logo">
-            EsportsSoc
+            <span className="title-span">Esports<span className="title-span__second">Soc</span></span>
           </a>
 
           <nav className={`navbar ${isActive && "active"}`} data-navbar>
@@ -104,7 +104,7 @@ function Navbar(props) {
               aria-label="toggle menu"
               data-nav-toggler
             >
-              <MenuIcon
+              <ListIcon
                 name="menu-outline"
                 onClick={() => {
                   setIsActive(true);
