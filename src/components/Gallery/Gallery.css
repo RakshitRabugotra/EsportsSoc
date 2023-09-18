@@ -114,10 +114,10 @@
     display: block;
     position: absolute;
     top: 4rem;
-    right: 4rem;
+    left: 4rem;
     padding: 0.5rem;
 
-    transform: skew(21deg);
+    transform: skew(-21deg);
     transition: all 300ms ease;
 
     cursor: pointer;
@@ -127,7 +127,7 @@
     display: block;
     margin: auto;
     font-size: 3rem;
-    transform: skew(-21deg);
+    transform: skew(21deg);
 }
 
 .model.open .close-btn:hover {
