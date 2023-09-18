@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
-import Button from "../Button/Button";
 import "./ImageSlider.css";
 
 const ImageSlider = ({slides, scrollInterval }) => {
@@ -56,7 +55,7 @@ const ImageSlider = ({slides, scrollInterval }) => {
             </div>
             <div style={slideStyles} className="slide"></div>
             <div style={upfrontImage} className="upfrontImage"></div>
-            <Button/>
+
             <div className="slider-dots">
                 {slides.map((slide, slideIndex) => {
                     return (

@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Gallery from "../components/Gallery/Gallery";
 import ImageSlider from "../components/ImageSlider/ImageSlider";
 import ContactUs from "../components/ContactUs/ContactUs"
-import Blog from "../components/Blog/BLog";
+import Blog from "../components/Blog/Blog";
 
 import codmImage from "../assets/games/codm.jpg";
 import csgoImage from "../assets/games/csgo.jpg";
