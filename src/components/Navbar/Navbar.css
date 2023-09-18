@@ -318,6 +318,7 @@ body {
 
 .register-btn:hover {
   color: var(--red);
+  filter: drop-shadow(2px 2px 1rem var(--red_75));
 }
 
 

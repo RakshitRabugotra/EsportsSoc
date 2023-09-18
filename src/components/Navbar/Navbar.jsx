@@ -5,7 +5,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PinterestIcon from "@mui/icons-material/Pinterest";
-import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
@@ -92,7 +92,7 @@ function Navbar(props) {
               aria-label="open search"
               data-search-toggler
             >
-              <AccountBoxIcon
+              <AccountCircleIcon
                 onClick={() => {
                   console.log("CLICKED!");
                   props.registerURL && navigate(props.registerURL);
