@@ -150,7 +150,7 @@ function ContactUs() {
               <ul className="social-list">
 
                 <li>
-                  <a href="#" className="social-link" style={{backgroundColor: "#C13584"}}>
+                  <a href="#" className="social-link" style={{backgroundColor: "#e80071"}}>
                     <InstagramIcon name="logo-instagram"/>
                   </a>
                 </li>
