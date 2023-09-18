@@ -94,7 +94,6 @@ function Navbar(props) {
             >
               <AccountCircleIcon
                 onClick={() => {
-                  console.log("CLICKED!");
                   props.registerURL && navigate(props.registerURL);
                 }}
               />
