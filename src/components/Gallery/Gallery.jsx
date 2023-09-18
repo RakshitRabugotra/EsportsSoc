@@ -37,7 +37,10 @@ function Gallery(props) {
       <div className={model ? "model open" : "model"}>
         <h2 className="caption">Caption</h2>
         <img src={tempImgSrc} />
-        <CloseIcon onClick={() => setModel(false)} />
+
+        <div className="close-btn" onClick={() => setModel(false)}>
+          <CloseIcon/>
+        </div>
       </div>
 
       <div style={{
