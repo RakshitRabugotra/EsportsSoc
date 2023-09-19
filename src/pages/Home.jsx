@@ -43,7 +43,7 @@ const Home = () => {
             </section>
             
             <section id="blog" className="blog-section">
-              <Blog/>
+
             </section>
               
             <section id="gallery" className="gallery-section">
