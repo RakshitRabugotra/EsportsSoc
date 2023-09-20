@@ -3,6 +3,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PinterestIcon from "@mui/icons-material/Pinterest";
+import SendIcon from '@mui/icons-material/Send';
 
 function ContactUs() {
   return (
@@ -186,7 +187,7 @@ function ContactUs() {
                   className="email-field"/>
 
                 <button type="submit" className="footer-btn" aria-label="submit">
-                  <ion-icon name="rocket"></ion-icon>
+                  <SendIcon/>
                 </button>
               </form>
 

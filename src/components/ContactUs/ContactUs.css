@@ -194,6 +194,19 @@
   color: var(--xiketic);
   display: grid;
   place-content: center;
+  transition: all 300ms ease;
+}
+
+.footer-btn svg {
+  padding: 0;
+  display: block;
+  margin: auto;
+  font-size: 2rem;
+}
+
+.footer-btn:hover {
+  color: var(--red);
+  background-color: var(--xiketic);
 }
 
 .footer-bottom-img {
