@@ -3,7 +3,7 @@
 }
 
 html { overflow-y: scroll; overflow-x:hidden; }
-body { background-color: #0f0f0f !important;}
+body { background-color: var(--back-black) !important;}
 
 ::-webkit-scrollbar {
     display: none;
