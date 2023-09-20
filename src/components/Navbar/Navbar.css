@@ -321,14 +321,6 @@ body {
   filter: drop-shadow(2px 2px 1rem var(--red_75));
 }
 
-.title-span,
-.title-span__second {
-  display: inline-block;
-}
-.title-span__second {
-  color: var(--red);
-}
-
 .nav-toggle-btn {
   color: var(--white);
   /* border: 1px solid var(--white); */
@@ -396,7 +388,7 @@ body {
   margin: auto;
   font-size: 3.5rem;
   transition: all 300ms ease;
-  color: var(--quick-silver);
+  color: var(--white);
 }
 
 .instagram-btn svg:hover {

@@ -51,7 +51,7 @@ function Navbar(props) {
       <div className="header-bottom skewBg" data-header>
         <div className="container">
           <a href="#" className="logo">
-            <span className="title-span">Esports<span className="title-span__second">Soc</span></span>
+            EsportsSoc
           </a>
 
           <nav className={`navbar ${isActive && "active"}`} data-navbar>
