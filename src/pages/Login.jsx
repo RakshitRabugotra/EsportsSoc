@@ -12,8 +12,8 @@ const Login = () => {
 
     return (<>
     <div className="form-wrapper">
-        <div className="back-btn">
-            <ArrowBackIcon onClick={() => {navigate("/")}}/>
+        <div className="back-btn" onClick={() => {navigate("/")}}>
+            <ArrowBackIcon/>
         </div>
         
         <Heading>Register</Heading>
